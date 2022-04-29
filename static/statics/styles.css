@@ -1,0 +1,69 @@
+* {
+    font-family: 'PT Serif', serif;
+}
+
+.navbar-css {
+    padding: 0.5rem 3rem;
+}
+
+.navbar-ul__li {
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.navbar-form__input {
+    font-size: 1.20rem;
+}
+
+.navbar-form__btn {
+    font-size: 1.20rem;
+}
+
+.row {
+    margin: 1rem 0;
+}
+
+.card-container {
+    padding-bottom:1rem;
+}
+
+.btn-outline-warning {
+    color: #000;
+    border-color:#ffde59;
+}
+
+::placeholder {
+    color:#ce6857;
+}
+
+.d-flex__btn-login {
+    margin: 0 1rem;
+}
+
+.d-flex__a-login {
+    color:#ce6857;
+}
+
+.d-flex__a-signup {
+    color:#ce6857;
+}
+
+@media (max-width: 990px){
+    .navbar-css {
+        padding: 0.5rem 0.5rem;
+    }
+
+    .d-flex__btn-login {
+        margin: 0 1rem 0 0;
+    }
+
+    .d-flex {
+        margin: 1rem 0;
+    }
+}
+
+@media (min-width: 660px){
+    .navbar-form {
+        width: 22rem;
+    }
+}
