@@ -4,14 +4,18 @@
         
         <div class="row justify-content-center">
         {% for product in Products %}
-                <div class="col-sm-4 col-md-3 col-lg-2 card-container">
-                <div class="card">
-                    <img src="{{product.image.url}}" class="card-img-top" alt="Productos Pyshis">
-                        <div class="card-body">
-                                <h5 class="card-title">{{product.name}}</h5>
+                {% if product.stock %}
+                        <div class="col-sm-4 col-md-3 col-lg-2 card-container">
+                        <div class="card">
+                        <img src="{{product.image.url}}" class="card-img-top" alt="Productos Pyshis">
+                                <div class="card-body">
+                                        <h5 class="card-title">{{product.name}}</h5>
+                                        {{product.quantity}} <br>
+                                        {{product.price}}
+                                </div>
                         </div>
-                </div>
-                </div>
+                        </div>
+                {% endif %}
         {% endfor %}
         </div>
 
